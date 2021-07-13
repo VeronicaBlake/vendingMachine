@@ -1,11 +1,11 @@
-import Value from "./Models/Value.js"
+import Snack from "./Models/Snack.js"
 import { EventEmitter } from "./Utils/EventEmitter.js"
 import { isValidProp } from "./Utils/isValidProp.js"
 
 class AppState extends EventEmitter {
-  /** @type {Value[]} */
-  values = []
-  totalMoney = 0
+  /** @type {Snack[]} */
+  snack = []
+  totalAmount = 0
 }
 
 export const ProxyState = new Proxy(new AppState(), {
