@@ -4,7 +4,7 @@ import { isValidProp } from "./Utils/isValidProp.js"
 
 class AppState extends EventEmitter {
   /** @type {Snack[]} */
-  snack = []
+  snack = [new Snack('cookie', 2.50), new Snack('soda', 1.75), new Snack('chips', 2.00)]
   totalAmount = 0
 }
 

@@ -23,13 +23,17 @@
     </header>
     <main class="container">
         <div class="row">
-            <div class="col" >
+            <div class="col my-2" >
                 <button class = "btn btn-success" onclick="app.snacksController.addMoney()">Add Quarters</button>
             </div>
-            <div class="col" id="total-money">Total Money: 0</div>
+            <div class="col" id="total-money">Total Money: $0</div>
         </div>
-        <div class="row">
-            <div class="col"></div>
+        <div class="row"> 
+            <div class="col my-2">
+                <button class = "btn btn-primary" onclick="app.snacksController.buySnack(cookie)"> Cookie </button>
+                <button class = "btn btn-primary" onclick="app.snacksController.buySnack('chips')"> Chips </button>
+                <button class = "btn btn-primary" onclick="app.snacksController.buySnack('soda')"> Soda </button>
+            </div>
         </div>
     </main>
     <footer class="bg-dark text-light">
